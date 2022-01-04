@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Category } from 'src/app/core/entity/category';
 import { MasterDetailCommands } from 'src/app/core/utils/master-detail-commands';
 

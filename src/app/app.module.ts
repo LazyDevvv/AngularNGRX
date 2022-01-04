@@ -8,7 +8,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { MetaReducer, StoreModule } from '@ngrx/store';
 import { environment } from 'src/environments/environment';
 import { EffectsModule } from '@ngrx/effects';
-import { effects } from './core/state-management/effects/index.effects';
 import { AppStoreModule } from './core/state-management/app-store.module';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
