@@ -1,0 +1,12 @@
+@import "../../../../../../ngrx-crud/src/styles/mixin.scss";
+
+.custom-padding {
+  padding: 80px 10px 10px 10px;
+}
+
+.control-panel {
+  @include control-panel-layout;
+}
+.content-container {
+  @include content-container-layout;
+}

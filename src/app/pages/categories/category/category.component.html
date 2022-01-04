@@ -1,0 +1,25 @@
+<div class="control-panel custom-padding">
+  <div class="button-panel">
+    <button mat-raised-button color="primary" type="button" (click)="getCategories()" matTooltip="Refresh the category">
+      Refresh
+    </button>&nbsp;
+    <button mat-raised-button color="primary" type="button" (click)="enableAddMode()" *ngIf="!selected"
+      matTooltip="Add a new category">
+      Add
+    </button>
+  </div>
+</div>
+<div class="content-container">
+  <div class="list-container">
+    <div *ngIf="categories$ | async as categories">
+      <mat-spinner *ngIf="loading$ | async; else heroList" mode="indeterminate" color="accent"></mat-spinner>
+      <ng-template #heroList>
+        <app-category-list [categories]="categories" [selectedHero]="selected" [commands]="commands"></app-category-list>
+      </ng-template>
+    </div>
+  </div>
+  <div class="detail-container">
+    <app-category-details *ngIf="selected" [category]="selected" [commands]="commands">
+    </app-category-details>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+// @import '../../../styles/mixin';
+
+@import '../../../../styles/mixin.scss';
+
+.heroes {
+  @include item-list;
+}
+
+.mat-card {
+  @include mat-card-layout;
+}
